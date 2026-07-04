@@ -21,13 +21,13 @@ FOUNDATION/
     AAI_PRINCIPLES.md
 
 FRAMEWORKS/
-    BCAS.md
     POPAE.md
 
 PRODUCTS/
     WELLBINE/
         README.md
         PRODUCT.md
+        BCAS.md
         HOME.md
         DAILY.md
         PUSH.md
@@ -68,12 +68,13 @@ Current documents:
 
 ## FRAMEWORKS
 
-Official frameworks developed under AAI.
+Generic frameworks developed under AAI.
 
-Current frameworks:
+Current framework:
 
-- BCAS
 - POPAE
+
+Frameworks in this section must be product-independent.
 
 ---
 
@@ -85,7 +86,7 @@ Current product:
 
 - Wellbine
 
-Each product contains its own independent documentation.
+Each product contains its own independent documentation, including product-specific methodologies, screens, flows and implementation rules.
 
 ---
 
