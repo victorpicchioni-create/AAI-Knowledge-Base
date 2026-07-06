@@ -1,4 +1,4 @@
-# Adaptive Alignment Intelligence (AAI)
+# ◉ Adaptive Alignment Intelligence (AAI)
 
 ## Official Core Documentation
 
