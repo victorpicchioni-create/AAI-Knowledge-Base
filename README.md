@@ -31,6 +31,7 @@ PRODUCTS/
         HOME.md
         DAILY.md
         PUSH.md
+        PILLARS.md
         STACK.md
 
 ARCHITECTURE_DECISIONS/
@@ -72,7 +73,7 @@ Generic frameworks developed under AAI.
 
 Current framework:
 
-- POPAE
+- POPAE.md
 
 Frameworks in this section must be product-independent.
 
@@ -86,7 +87,24 @@ Current product:
 
 - Wellbine
 
-Each product contains its own independent documentation, including product-specific methodologies, screens, flows and implementation rules.
+---
+
+## PRODUCTS / WELLBINE
+
+Wellbine is the first product built using AAI.
+
+Current documents:
+
+- README.md
+- PRODUCT.md
+- BCAS.md
+- HOME.md
+- DAILY.md
+- PUSH.md
+- PILLARS.md
+- STACK.md
+
+Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars and implementation rules.
 
 ---
 
@@ -139,6 +157,10 @@ Status
 Primary Product
 
 **Wellbine**
+
+Current Product Focus
+
+**AAI → POPAE → Wellbine → BCAS → Daily + Push → Operational Pillars**
 
 ---
 
