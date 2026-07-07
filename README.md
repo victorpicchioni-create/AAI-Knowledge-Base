@@ -34,6 +34,7 @@ PRODUCTS/
         PUSH.md
         PILLARS.md
         STACK.md
+
 ARCHITECTURE_DECISIONS/
 ```
 
@@ -106,6 +107,7 @@ Current documents:
 - STACK.md
 
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
+
 ---
 
 ## ARCHITECTURE_DECISIONS
@@ -113,6 +115,7 @@ Each product contains its own independent documentation, including product-speci
 Official architectural decisions that define the evolution of AAI and its products.
 
 ---
+
 # Current Architecture
 
 The current Wellbine architecture follows this direction:
@@ -156,6 +159,7 @@ Wellbine is being structured around:
 - AAI as the intelligence architecture
 
 ---
+
 # Working Method
 
 Every concept follows the same lifecycle.
