@@ -54,12 +54,22 @@ BCAS
 
 ↓
 
-Daily + Push
+Plan Templates
 
 ↓
 
-Operational Pillars
+Home + Daily + Push + Operational Pillars
 ```
+
+Plan Templates define the user's starting configuration.
+
+Home is the main operating surface.
+
+Daily is the deeper execution layer.
+
+Push operates outside the app.
+
+Pillars organize operational behavior.
 
 ---
 
@@ -100,7 +110,7 @@ Align
 Evolve
 ```
 
-This cycle supports the user's daily guidance, Push sequences, pillar behavior, recovery logic and personalization.
+This cycle supports Daily guidance, Push sequences, pillar behavior, recovery logic, plan adaptation and personalization.
 
 ---
 
@@ -124,7 +134,7 @@ What biological context is the user in now?
 
 ---
 
-# Core Product Documents
+# Current Wellbine Documents
 
 The current Wellbine documentation includes:
 
@@ -134,6 +144,7 @@ The current Wellbine documentation includes:
 - DAILY.md
 - PUSH.md
 - PILLARS.md
+- PLAN_TEMPLATES.md
 - STACK.md
 
 ---
@@ -172,7 +183,13 @@ Defined in:
 HOME.md
 ```
 
-This document defines the main app entry point and how Wellbine presents current context and Next Best Action.
+This document defines the main app operating surface.
+
+Home is not just a tab.
+
+Home should centralize the user's current state, Adaptive Summary, pillar signals, Current Insight, Next Best Action, Ask Wellbine and contextual access points.
+
+Home should not depend on fixed Bottom Navigation.
 
 ---
 
@@ -186,6 +203,8 @@ DAILY.md
 
 This document defines the daily execution flow of Wellbine.
 
+Daily is the deeper operational layer of the day.
+
 ---
 
 ## Push
@@ -196,7 +215,11 @@ Defined in:
 PUSH.md
 ```
 
-This document defines how Wellbine operates outside the app through 3 to 4 intelligent daily Push cycles.
+This document defines how Wellbine operates outside the app through intelligent daily Push cycles.
+
+Push should not behave like generic reminders.
+
+Push should work as contextual checkpoints that connect user response to the next sequence.
 
 ---
 
@@ -222,7 +245,33 @@ Current pillars:
 
 Pillars are not just icons or habits.
 
-They are operational behavior modules connected to AAI, BCAS, Daily and Push.
+They are operational behavior modules connected to AAI, BCAS, Daily, Push and Home.
+
+---
+
+## Plan Templates
+
+Defined in:
+
+```text
+PLAN_TEMPLATES.md
+```
+
+This document defines flexible admin-managed plan templates.
+
+Plan Templates activate and organize the Wellbine experience across:
+
+- Home
+- Daily
+- Push
+- Pillars
+- Wearables
+- Settings
+- User guidance
+- Content
+- Recommendations
+
+Plan Templates should be database-driven and editable without code changes through Supabase or an Admin Panel.
 
 ---
 
@@ -262,6 +311,7 @@ Each Push cycle may:
 - Suggest the next sequence
 - Confirm actions
 - Update Daily
+- Update Pillars
 - Feed AAI learning
 
 ---
@@ -291,6 +341,48 @@ Register delay
 ↓
 Follow up by Push in approximately 1 hour
 ```
+
+---
+
+# Home-First Product Principle
+
+Wellbine should not rely on fixed Bottom Navigation.
+
+Home should become the central operating surface of the app.
+
+Previous navigation areas should be absorbed into Home when possible:
+
+- Hub becomes pillar visibility through Orbs and Quick Panels.
+- Stats become Adaptive Summary, Sync and pillar percentages.
+- Store becomes contextual recommendations or external flow.
+- Profile becomes Personal Center or Settings access.
+- Daily remains accessible through contextual actions.
+
+The product should reduce navigation, not multiply tabs.
+
+---
+
+# Plan Template Principle
+
+Plan Templates are flexible starting configurations.
+
+The admin should be able to create, edit, duplicate, publish, archive and reorganize plans without changing code.
+
+Plan Templates may configure:
+
+- Pillars
+- Daily
+- Push
+- Home
+- Wearables
+- Settings
+- Content
+- Recommendations
+- Protocol rules
+
+The engine is built once.
+
+Plans are managed as content and configuration.
 
 ---
 
@@ -334,12 +426,15 @@ Current focus:
 
 - AAI alignment
 - BCAS logic
+- Home as central operating surface
 - Daily execution
 - Push orchestration
 - Operational pillars
+- Plan Templates
 - Low-friction user experience
 - Context-aware guidance
 - Recovery-based behavior
+- Admin-managed configuration
 
 ---
 
@@ -355,4 +450,5 @@ Current focus:
 - PRODUCTS/WELLBINE/DAILY.md
 - PRODUCTS/WELLBINE/PUSH.md
 - PRODUCTS/WELLBINE/PILLARS.md
+- PRODUCTS/WELLBINE/PLAN_TEMPLATES.md
 - PRODUCTS/WELLBINE/STACK.md
