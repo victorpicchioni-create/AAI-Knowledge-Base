@@ -28,12 +28,12 @@ PRODUCTS/
         README.md
         PRODUCT.md
         BCAS.md
+        PLAN_TEMPLATES.md
         HOME.md
         DAILY.md
         PUSH.md
         PILLARS.md
         STACK.md
-
 ARCHITECTURE_DECISIONS/
 ```
 
@@ -98,14 +98,14 @@ Current documents:
 - README.md
 - PRODUCT.md
 - BCAS.md
+- PLAN_TEMPLATES.md
 - HOME.md
 - DAILY.md
 - PUSH.md
 - PILLARS.md
 - STACK.md
 
-Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars and implementation rules.
-
+Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 ---
 
 ## ARCHITECTURE_DECISIONS
@@ -113,7 +113,49 @@ Each product contains its own independent documentation, including product-speci
 Official architectural decisions that define the evolution of AAI and its products.
 
 ---
+# Current Architecture
 
+The current Wellbine architecture follows this direction:
+
+```text
+AAI
+
+↓
+
+POPAE
+
+↓
+
+Wellbine
+
+↓
+
+BCAS
+
+↓
+
+Plan Templates
+
+↓
+
+Home + Daily + Push + Operational Pillars
+```
+
+---
+
+# Current Product Focus
+
+Wellbine is being structured around:
+
+- Home as the central operating surface
+- Daily as the deeper execution layer
+- Push as the outside-app orchestration layer
+- Operational Pillars as behavior modules
+- Plan Templates as admin-managed starting configurations
+- BCAS as the biological context alignment methodology
+- AAI as the intelligence architecture
+
+---
 # Working Method
 
 Every concept follows the same lifecycle.
@@ -157,10 +199,6 @@ Status
 Primary Product
 
 **Wellbine**
-
-Current Product Focus
-
-**AAI → POPAE → Wellbine → BCAS → Daily + Push → Operational Pillars**
 
 ---
 
