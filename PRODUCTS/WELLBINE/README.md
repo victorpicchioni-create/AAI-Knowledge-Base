@@ -140,13 +140,13 @@ The current Wellbine documentation includes:
 
 - PRODUCT.md
 - BCAS.md
+- PLAN_TEMPLATES.md
+- ONBOARDING.md
 - HOME.md
 - DAILY.md
 - PUSH.md
 - PILLARS.md
-- PLAN_TEMPLATES.md
 - STACK.md
-
 ---
 
 # Core Product Areas
@@ -172,6 +172,46 @@ BCAS.md
 ```
 
 This document defines how Wellbine aligns guidance with biological context.
+
+---
+
+## Plan Templates
+
+Defined in:
+
+```text
+PLAN_TEMPLATES.md
+```
+
+This document defines flexible admin-managed plan templates.
+
+Plan Templates activate and organize the Wellbine experience across:
+
+- Home
+- Daily
+- Push
+- Pillars
+- Wearables
+- Settings
+- User guidance
+- Content
+- Recommendations
+
+Plan Templates should be database-driven and editable without code changes through Supabase or an Admin Panel.
+
+---
+
+## Onboarding
+
+Defined in:
+
+```text
+ONBOARDING.md
+```
+
+This document defines the first activation flow of Wellbine.
+
+Onboarding collects essential user context, supports wearable and upload options, activates a Recommended or Adapted Plan, configures Pillars, Daily, Push and Home, and moves the user into the first 7-Day Sync Plan.
 
 ---
 
@@ -246,32 +286,6 @@ Current pillars:
 Pillars are not just icons or habits.
 
 They are operational behavior modules connected to AAI, BCAS, Daily, Push and Home.
-
----
-
-## Plan Templates
-
-Defined in:
-
-```text
-PLAN_TEMPLATES.md
-```
-
-This document defines flexible admin-managed plan templates.
-
-Plan Templates activate and organize the Wellbine experience across:
-
-- Home
-- Daily
-- Push
-- Pillars
-- Wearables
-- Settings
-- User guidance
-- Content
-- Recommendations
-
-Plan Templates should be database-driven and editable without code changes through Supabase or an Admin Panel.
 
 ---
 
