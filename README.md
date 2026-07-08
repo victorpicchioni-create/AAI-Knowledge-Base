@@ -29,6 +29,7 @@ PRODUCTS/
         PRODUCT.md
         BCAS.md
         PLAN_TEMPLATES.md
+        ONBOARDING.md
         HOME.md
         DAILY.md
         PUSH.md
@@ -141,6 +142,10 @@ Plan Templates
 
 ↓
 
+Onboarding
+
+↓
+
 Home + Daily + Push + Operational Pillars
 ```
 
@@ -151,13 +156,13 @@ Home + Daily + Push + Operational Pillars
 Wellbine is being structured around:
 
 - Home as the central operating surface
+- Onboarding as the first activation flow
 - Daily as the deeper execution layer
 - Push as the outside-app orchestration layer
 - Operational Pillars as behavior modules
 - Plan Templates as admin-managed starting configurations
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
-
 ---
 
 # Working Method
