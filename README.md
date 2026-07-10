@@ -15,6 +15,10 @@ AAI-Knowledge-Base/
 
 README.md
 
+ARCHITECTURE_DECISIONS/
+    README.md
+    HOME_CENTRAL.md
+
 FOUNDATION/
     AAI_CONSTITUTION.md
     AAI_GLOSSARY.md
@@ -36,10 +40,12 @@ PRODUCTS/
         PILLARS.md
         STACK.md
         ADMIN.md
+       
 
 ARCHITECTURE_DECISIONS/
-```
-
+    README.md
+    HOME_CENTRAL.md
+```    
 ---
 
 # Repository Purpose
@@ -116,7 +122,14 @@ Each product contains its own independent documentation, including product-speci
 
 ## ARCHITECTURE_DECISIONS
 
-Official architectural decisions that define the evolution of AAI and its products.
+This folder stores official architecture decisions for AAI, Wellbine and related systems.
+
+Architecture decisions are used to record important product, technical and structural choices that should not be lost, forgotten or accidentally reversed.
+
+Current documents:
+
+- README.md
+- HOME_CENTRAL.md
 
 ---
 
