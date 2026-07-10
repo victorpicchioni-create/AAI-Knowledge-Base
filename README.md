@@ -18,6 +18,8 @@ README.md
 ARCHITECTURE_DECISIONS/
     README.md
     HOME_CENTRAL.md
+    PUSH_ORCHESTRATION.md
+    PLAN_TEMPLATES_DB.md
 
 FOUNDATION/
     AAI_CONSTITUTION.md
@@ -40,12 +42,8 @@ PRODUCTS/
         PILLARS.md
         STACK.md
         ADMIN.md
-       
-
-ARCHITECTURE_DECISIONS/
-    README.md
-    HOME_CENTRAL.md
-```    
+```
+     
 ---
 
 # Repository Purpose
@@ -131,6 +129,7 @@ Current documents:
 - README.md
 - HOME_CENTRAL.md
 - PUSH_ORCHESTRATION.md
+- PLAN_TEMPLATES_DB.md
   
 ---
 
