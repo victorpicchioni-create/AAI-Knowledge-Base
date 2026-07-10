@@ -176,7 +176,8 @@ The current active architecture decisions are:
 HOME_CENTRAL.md
 PUSH_ORCHESTRATION.md
 PLAN_TEMPLATES_DB.md
-
+ADMIN_CONTROL_LAYER.md
+```
 ---
 
 # Current Planned Decisions
@@ -184,7 +185,6 @@ PLAN_TEMPLATES_DB.md
 The next planned architecture decisions are:
 
 ```text
-ADMIN_CONTROL_LAYER.md
 ONBOARDING_ACTIVATION.md
 ```
 
