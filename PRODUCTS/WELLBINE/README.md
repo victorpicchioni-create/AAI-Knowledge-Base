@@ -147,6 +147,8 @@ The current Wellbine documentation includes:
 - PUSH.md
 - PILLARS.md
 - STACK.md
+- ADMIN.md
+  
 ---
 
 # Core Product Areas
@@ -302,6 +304,20 @@ This document defines medications, vitamins, supplements, nutraceuticals, stock 
 Daily Stack is one operational pillar, not the only operational pillar.
 
 ---
+
+## Admin
+
+Defined in:
+
+```text
+ADMIN.md
+```
+
+This document defines the internal management system of Wellbine.
+
+Admin allows authorized operators to configure and update Plans, Onboarding, Home, Daily, Push, Pillars, Stack, Wearables, Settings, Uploads, Content, Recommendations, Users, Analytics and Publishing without code changes.
+
+Admin is the operational control layer of Wellbine.
 
 # Push-First Principle
 
@@ -466,3 +482,4 @@ Current focus:
 - PRODUCTS/WELLBINE/PILLARS.md
 - PRODUCTS/WELLBINE/PLAN_TEMPLATES.md
 - PRODUCTS/WELLBINE/STACK.md
+- PRODUCTS/WELLBINE/ADMIN.md
