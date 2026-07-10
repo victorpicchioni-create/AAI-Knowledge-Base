@@ -168,13 +168,22 @@ List documents affected by this decision.
 
 ---
 
-# Current Planned Decisions
+# Current Decisions
 
-The first planned architecture decisions are:
+The current active architecture decisions are:
 
 ```text
 HOME_CENTRAL.md
 PUSH_ORCHESTRATION.md
+```
+
+---
+
+# Current Planned Decisions
+
+The next planned architecture decisions are:
+
+```text
 PLAN_TEMPLATES_DB.md
 ADMIN_CONTROL_LAYER.md
 ONBOARDING_ACTIVATION.md
