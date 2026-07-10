@@ -35,6 +35,7 @@ PRODUCTS/
         PUSH.md
         PILLARS.md
         STACK.md
+        ADMIN.md
 
 ARCHITECTURE_DECISIONS/
 ```
@@ -101,11 +102,13 @@ Current documents:
 - PRODUCT.md
 - BCAS.md
 - PLAN_TEMPLATES.md
+- ONBOARDING.md
 - HOME.md
 - DAILY.md
 - PUSH.md
 - PILLARS.md
 - STACK.md
+- ADMIN.md
 
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -161,8 +164,10 @@ Wellbine is being structured around:
 - Push as the outside-app orchestration layer
 - Operational Pillars as behavior modules
 - Plan Templates as admin-managed starting configurations
+- Admin as the operational control layer
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
+  
 ---
 
 # Working Method
