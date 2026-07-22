@@ -44,6 +44,7 @@ PRODUCTS/
         PILLARS.md
         STACK.md
         ADMIN.md
+        DATA_MODEL.md
 ```
      
 ---
@@ -115,6 +116,7 @@ Current documents:
 - PILLARS.md
 - STACK.md
 - ADMIN.md
+- DATA_MODEL.md
 
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -182,6 +184,7 @@ Wellbine is being structured around:
 - Operational Pillars as behavior modules
 - Plan Templates as admin-managed starting configurations
 - Admin as the operational control layer
+- Data Model as the structural foundation for implementation
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
