@@ -150,6 +150,7 @@ The current Wellbine documentation includes:
 - ADMIN.md
 - DATA_MODEL.md
 - IMPLEMENTATION_PLAN.md
+- WEARABLES.md
   
 ---
 
@@ -355,6 +356,24 @@ It defines the practical build order for turning the Wellbine architecture into 
 
 ---
 
+## Wearables
+
+Defined in:
+
+```text
+WEARABLES.md
+```
+
+This document defines the optional wearable connectivity layer of Wellbine.
+
+Wearables improve automation, personalization and adaptive guidance by providing permissioned context from devices and health platforms.
+
+The Wearables layer connects sleep, recovery, movement, heart trends, HRV, respiratory signals, oxygen saturation, temperature trends, stress signals and readiness to Home, Daily, Push, Pillars and AAI Context.
+
+Wearables improve the system, but Wellbine must work without wearables.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -520,3 +539,4 @@ Current focus:
 - PRODUCTS/WELLBINE/STACK.md
 - PRODUCTS/WELLBINE/ADMIN.md
 - PRODUCTS/WELLBINE/IMPLEMENTATION_PLAN.md
+- PRODUCTS/WELLBINE/WEARABLES.md
