@@ -148,6 +148,7 @@ The current Wellbine documentation includes:
 - PILLARS.md
 - STACK.md
 - ADMIN.md
+- DATA_MODEL.md
   
 ---
 
@@ -318,6 +319,22 @@ This document defines the internal management system of Wellbine.
 Admin allows authorized operators to configure and update Plans, Onboarding, Home, Daily, Push, Pillars, Stack, Wearables, Settings, Uploads, Content, Recommendations, Users, Analytics and Publishing without code changes.
 
 Admin is the operational control layer of Wellbine.
+
+---
+
+## Data Model
+
+Defined in:
+
+```text
+DATA_MODEL.md
+```
+
+This document defines the initial conceptual and operational data model for Wellbine.
+
+The Data Model translates the product architecture into database-ready structures for Supabase, FlutterFlow and Admin implementation.
+
+It covers Users, Plan Templates, User Active Plans, Pillars, Daily, Push, Home, Stack, Wearables, Settings, Uploads, Content, Recommendations, Admin, AAI Context and Events.
 
 # Push-First Principle
 
