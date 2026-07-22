@@ -177,16 +177,13 @@ HOME_CENTRAL.md
 PUSH_ORCHESTRATION.md
 PLAN_TEMPLATES_DB.md
 ADMIN_CONTROL_LAYER.md
+ONBOARDING_ACTIVATION.md
 ```
 ---
 
 # Current Planned Decisions
 
-The next planned architecture decisions are:
-
-```text
-ONBOARDING_ACTIVATION.md
-```
+There are no pending architecture decisions in the current documentation cycle.
 
 ---
 
