@@ -45,6 +45,7 @@ PRODUCTS/
         STACK.md
         ADMIN.md
         DATA_MODEL.md
+        IMPLEMENTATION_PLAN.md
 ```
      
 ---
@@ -117,6 +118,7 @@ Current documents:
 - STACK.md
 - ADMIN.md
 - DATA_MODEL.md
+- IMPLEMENTATION_PLAN.md
 
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -185,6 +187,7 @@ Wellbine is being structured around:
 - Plan Templates as admin-managed starting configurations
 - Admin as the operational control layer
 - Data Model as the structural foundation for implementation
+- Implementation Plan as the staged execution roadmap
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
