@@ -149,6 +149,7 @@ The current Wellbine documentation includes:
 - STACK.md
 - ADMIN.md
 - DATA_MODEL.md
+- IMPLEMENTATION_PLAN.md
   
 ---
 
@@ -336,6 +337,24 @@ The Data Model translates the product architecture into database-ready structure
 
 It covers Users, Plan Templates, User Active Plans, Pillars, Daily, Push, Home, Stack, Wearables, Settings, Uploads, Content, Recommendations, Admin, AAI Context and Events.
 
+---
+
+## Implementation Plan
+
+Defined in:
+
+```text
+IMPLEMENTATION_PLAN.md
+```
+
+This document defines the staged execution roadmap for building Wellbine.
+
+The Implementation Plan connects Supabase, FlutterFlow, Data Model, Authentication, Onboarding, Plan Templates, Home, Daily, Push, Pillars, Wearables, Uploads, Admin, AAI Context, Commerce Bridge, App Store and Google Play readiness, QA and Production Launch.
+
+It defines the practical build order for turning the Wellbine architecture into an operational product.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -500,3 +519,4 @@ Current focus:
 - PRODUCTS/WELLBINE/PLAN_TEMPLATES.md
 - PRODUCTS/WELLBINE/STACK.md
 - PRODUCTS/WELLBINE/ADMIN.md
+- PRODUCTS/WELLBINE/IMPLEMENTATION_PLAN.md
