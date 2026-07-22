@@ -46,6 +46,7 @@ PRODUCTS/
         ADMIN.md
         DATA_MODEL.md
         IMPLEMENTATION_PLAN.md
+        WEARABLES.md
 ```
      
 ---
@@ -119,7 +120,8 @@ Current documents:
 - ADMIN.md
 - DATA_MODEL.md
 - IMPLEMENTATION_PLAN.md
-
+- WEARABLES.md
+  
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
 ---
@@ -188,6 +190,7 @@ Wellbine is being structured around:
 - Admin as the operational control layer
 - Data Model as the structural foundation for implementation
 - Implementation Plan as the staged execution roadmap
+- Wearables as optional context enhancers
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
