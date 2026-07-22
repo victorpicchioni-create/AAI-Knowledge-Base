@@ -48,6 +48,7 @@ PRODUCTS/
         IMPLEMENTATION_PLAN.md
         WEARABLES.md
         APP_RELEASE.md
+        COMMERCE_BRIDGE.md
 ```
      
 ---
@@ -108,8 +109,6 @@ Wellbine is the first product built using AAI.
 
 Current documents:
 
-Current documents:
-
 - README.md
 - PRODUCT.md
 - BCAS.md
@@ -125,6 +124,7 @@ Current documents:
 - IMPLEMENTATION_PLAN.md
 - WEARABLES.md
 - APP_RELEASE.md
+- COMMERCE_BRIDGE.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -196,6 +196,7 @@ Wellbine is being structured around:
 - Implementation Plan as the staged execution roadmap
 - Wearables as optional context enhancers
 - App Release as the iOS and Android approval readiness layer
+- Commerce Bridge as the subscriber benefit and external commerce connection layer
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
