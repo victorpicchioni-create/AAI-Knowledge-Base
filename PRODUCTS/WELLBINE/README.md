@@ -152,6 +152,7 @@ The current Wellbine documentation includes:
 - IMPLEMENTATION_PLAN.md
 - WEARABLES.md
 - APP_RELEASE.md
+- COMMERCE_BRIDGE.md
   
 ---
 
@@ -391,6 +392,24 @@ App Store and Google Play approval should be considered during product design, n
 
 ---
 
+## Commerce Bridge
+
+Defined in:
+
+```text
+COMMERCE_BRIDGE.md
+```
+
+This document defines the subscriber benefit and external commerce connection layer of Wellbine.
+
+Commerce Bridge allows eligible users to access coupons, offers or product-related benefits inside Wellbine and complete purchases through external e-commerce platforms.
+
+The MVP Commerce Bridge uses one primary action that copies the benefit code automatically and opens the external commerce destination.
+
+Commerce Bridge supports monetization without turning Wellbine into an in-app store or making commerce the center of the product experience.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -558,3 +577,4 @@ Current focus:
 - PRODUCTS/WELLBINE/IMPLEMENTATION_PLAN.md
 - PRODUCTS/WELLBINE/WEARABLES.md
 - PRODUCTS/WELLBINE/APP_RELEASE.md
+- PRODUCTS/WELLBINE/COMMERCE_BRIDGE.md
