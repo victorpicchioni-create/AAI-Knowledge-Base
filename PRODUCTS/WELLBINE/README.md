@@ -151,6 +151,7 @@ The current Wellbine documentation includes:
 - DATA_MODEL.md
 - IMPLEMENTATION_PLAN.md
 - WEARABLES.md
+- APP_RELEASE.md
   
 ---
 
@@ -374,6 +375,22 @@ Wearables improve the system, but Wellbine must work without wearables.
 
 ---
 
+## App Release
+
+Defined in:
+
+```text
+APP_RELEASE.md
+```
+
+This document defines the App Store and Google Play release readiness plan for Wellbine.
+
+The App Release plan covers iOS and Android approval, TestFlight, Google internal testing, health data permissions, wearable permissions, Push notifications, Privacy Policy, Terms of Use, account deletion, AI explanation, subscription language, external commerce, health claims, app screenshots, review notes, QA and production launch.
+
+App Store and Google Play approval should be considered during product design, not only before launch.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -540,3 +557,4 @@ Current focus:
 - PRODUCTS/WELLBINE/ADMIN.md
 - PRODUCTS/WELLBINE/IMPLEMENTATION_PLAN.md
 - PRODUCTS/WELLBINE/WEARABLES.md
+- PRODUCTS/WELLBINE/APP_RELEASE.md
