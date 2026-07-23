@@ -165,6 +165,9 @@ The current Wellbine documentation includes:
 - MVP_BUILD_SEQUENCE.md
 - SCREEN_MAP.md
 - FEATURE_FLAGS.md
+- SUPABASE_SQL_MVP.md
+- FLUTTERFLOW_ACTIONS.md
+- EDGE_FUNCTION_PAYLOADS.md
   
   ---
 
@@ -602,6 +605,56 @@ Unfinished, risky or context-specific features should be controlled by configura
 
 ---
 
+---
+
+## Supabase SQL MVP
+
+Defined in:
+
+```text
+SUPABASE_SQL_MVP.md
+```
+
+This document defines the first practical SQL blueprint for the Wellbine MVP Supabase database.
+
+The Supabase SQL MVP moves the product from conceptual schema into an initial executable database structure covering user profiles, settings, plan templates, plan versions, active plans, pillars, Daily, Home state, feature flags, content modules, basic admin roles and RLS direction.
+
+The core SQL MVP rule is: create only what is necessary to prove the operating loop.
+
+---
+
+## FlutterFlow Actions
+
+Defined in:
+
+```text
+FLUTTERFLOW_ACTIONS.md
+```
+
+This document defines the practical FlutterFlow action logic for Wellbine.
+
+The FlutterFlow Actions document translates app screens into concrete frontend actions, backend calls, Supabase operations, navigation rules and user interaction flows.
+
+The core FlutterFlow action rule is: FlutterFlow captures user intent, Supabase stores state and Edge Functions handle critical logic.
+
+---
+
+## Edge Function Payloads
+
+Defined in:
+
+```text
+EDGE_FUNCTION_PAYLOADS.md
+```
+
+This document defines the standard request and response payloads for Wellbine Edge Functions.
+
+The Edge Function Payloads document creates predictable contracts between FlutterFlow, Supabase and backend workflows for plan activation, Daily actions, Push responses, Home updates, AAI context, uploads, commerce, admin publishing and account deletion.
+
+The core payload rule is: every Edge Function should receive clear intent and return a predictable result.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -782,3 +835,6 @@ Current focus:
 - PRODUCTS/WELLBINE/MVP_BUILD_SEQUENCE.md
 - PRODUCTS/WELLBINE/SCREEN_MAP.md
 - PRODUCTS/WELLBINE/FEATURE_FLAGS.md
+- PRODUCTS/WELLBINE/SUPABASE_SQL_MVP.md
+- PRODUCTS/WELLBINE/FLUTTERFLOW_ACTIONS.md
+- PRODUCTS/WELLBINE/EDGE_FUNCTION_PAYLOADS.md
