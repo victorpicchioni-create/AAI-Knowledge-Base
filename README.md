@@ -58,7 +58,10 @@ PRODUCTS/
         SUPABASE_IMPLEMENTATION.md
         EDGE_FUNCTIONS.md
         ADMIN_BUILD_GUIDE.md
-        
+        MVP_BUILD_SEQUENCE.md
+        SCREEN_MAP.md
+        FEATURE_FLAGS.md
+              
 ```
      
 ---
@@ -144,6 +147,9 @@ Current documents:
 - SUPABASE_IMPLEMENTATION.md
 - EDGE_FUNCTIONS.md
 - ADMIN_BUILD_GUIDE.md
+- MVP_BUILD_SEQUENCE.md
+- SCREEN_MAP.md
+- FEATURE_FLAGS.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -225,6 +231,9 @@ Wellbine is being structured around:
 - Supabase Implementation as the backend execution layer
 - Edge Functions as the secure backend workflow layer
 - Admin Build Guide as the internal control implementation layer
+- MVP Build Sequence as the ordered construction roadmap
+- Screen Map as the mobile app structure blueprint
+- Feature Flags as the operational visibility and rollout control layer
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
