@@ -158,7 +158,11 @@ The current Wellbine documentation includes:
 - PRIVACY_POLICY_DRAFT.md
 - TERMS_DRAFT.md
 - APP_RELEASE_CHECKLIST.md
-
+- FLUTTERFLOW_BUILD_GUIDE.md
+- SUPABASE_IMPLEMENTATION.md
+- EDGE_FUNCTIONS.md
+- ADMIN_BUILD_GUIDE.md
+  
   ---
 
 # Core Product Areas
@@ -491,6 +495,62 @@ This document defines the practical verification checklist for publishing Wellbi
 
 The App Release Checklist translates the release strategy into concrete validation items for App Store review, Google Play review, internal testing, beta testing and controlled production launch.
 
+---
+
+## FlutterFlow Build Guide
+
+Defined in:
+
+```text
+FLUTTERFLOW_BUILD_GUIDE.md
+```
+
+This document defines the practical implementation guide for building the Wellbine mobile app interface, user flows, screen logic, Supabase connections and adaptive user experience in FlutterFlow.
+
+FlutterFlow is the product interface layer, not the source of truth.
+
+---
+
+## Supabase Implementation
+
+Defined in:
+
+```text
+SUPABASE_IMPLEMENTATION.md
+```
+
+This document defines the practical backend setup process that turns the Wellbine data model and schema blueprint into a working Supabase environment for the mobile app, Admin layer and AAI services.
+
+Supabase should be built as the source of truth before building complex frontend behavior.
+
+---
+
+## Edge Functions
+
+Defined in:
+
+```text
+EDGE_FUNCTIONS.md
+```
+
+This document defines the secure backend functions used to process sensitive, multi-step and adaptive workflows that should not live entirely inside the FlutterFlow frontend.
+
+The core Edge Functions rule is: frontend triggers, backend decides.
+
+---
+
+## Admin Build Guide
+
+Defined in:
+
+```text
+ADMIN_BUILD_GUIDE.md
+```
+
+This document defines the practical implementation guide for creating the internal control system used to configure, publish, manage and monitor the Wellbine product experience.
+
+Admin controls product behavior. The app executes published configuration.
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -664,3 +724,7 @@ Current focus:
 - PRODUCTS/WELLBINE/PRIVACY_POLICY_DRAFT.md
 - PRODUCTS/WELLBINE/TERMS_DRAFT.md
 - PRODUCTS/WELLBINE/APP_RELEASE_CHECKLIST.md
+- PRODUCTS/WELLBINE/FLUTTERFLOW_BUILD_GUIDE.md
+- PRODUCTS/WELLBINE/SUPABASE_IMPLEMENTATION.md
+- PRODUCTS/WELLBINE/EDGE_FUNCTIONS.md
+- PRODUCTS/WELLBINE/ADMIN_BUILD_GUIDE.md
