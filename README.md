@@ -49,6 +49,7 @@ PRODUCTS/
         WEARABLES.md
         APP_RELEASE.md
         COMMERCE_BRIDGE.md
+        SUPABASE_SCHEMA.md
 ```
      
 ---
@@ -125,6 +126,7 @@ Current documents:
 - WEARABLES.md
 - APP_RELEASE.md
 - COMMERCE_BRIDGE.md
+- SUPABASE_SCHEMA.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -197,6 +199,7 @@ Wellbine is being structured around:
 - Wearables as optional context enhancers
 - App Release as the iOS and Android approval readiness layer
 - Commerce Bridge as the subscriber benefit and external commerce connection layer
+- Supabase Schema as the operational backend structure
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
