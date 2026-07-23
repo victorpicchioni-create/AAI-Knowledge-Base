@@ -162,6 +162,9 @@ The current Wellbine documentation includes:
 - SUPABASE_IMPLEMENTATION.md
 - EDGE_FUNCTIONS.md
 - ADMIN_BUILD_GUIDE.md
+- MVP_BUILD_SEQUENCE.md
+- SCREEN_MAP.md
+- FEATURE_FLAGS.md
   
   ---
 
@@ -437,8 +440,6 @@ Supabase is the source of truth. FlutterFlow is the interface layer.
 
 ---
 
----
-
 ## QA Plan
 
 Defined in:
@@ -550,6 +551,56 @@ ADMIN_BUILD_GUIDE.md
 This document defines the practical implementation guide for creating the internal control system used to configure, publish, manage and monitor the Wellbine product experience.
 
 Admin controls product behavior. The app executes published configuration.
+
+---
+
+## MVP Build Sequence
+
+Defined in:
+
+```text
+MVP_BUILD_SEQUENCE.md
+```
+
+This document defines the ordered execution plan for building the first usable version of Wellbine.
+
+The MVP Build Sequence defines what should be built first, what should wait, which Supabase tables come first, which FlutterFlow screens come first, which Edge Functions are mandatory and when Push, Wearables, Uploads and Commerce Bridge should enter the product.
+
+The core MVP rule is: build the operating loop before expanding the ecosystem.
+
+---
+
+## Screen Map
+
+Defined in:
+
+```text
+SCREEN_MAP.md
+```
+
+This document defines the structural blueprint of the Wellbine mobile app.
+
+The Screen Map explains which screens exist, how users move between them and how each screen connects to the operating system experience.
+
+Wellbine should be Home-centered, with Daily as the execution layer, Pillars as operational modules and Settings / Personal Center as the control layer.
+
+---
+
+## Feature Flags
+
+Defined in:
+
+```text
+FEATURE_FLAGS.md
+```
+
+This document defines the Feature Flags strategy for Wellbine.
+
+Feature Flags control which product features are visible, active, hidden, limited, experimental or disabled without requiring app redeployment for every operational change.
+
+Unfinished, risky or context-specific features should be controlled by configuration, not hardcoded into the app.
+
+---
 
 # Push-First Principle
 
@@ -728,3 +779,6 @@ Current focus:
 - PRODUCTS/WELLBINE/SUPABASE_IMPLEMENTATION.md
 - PRODUCTS/WELLBINE/EDGE_FUNCTIONS.md
 - PRODUCTS/WELLBINE/ADMIN_BUILD_GUIDE.md
+- PRODUCTS/WELLBINE/MVP_BUILD_SEQUENCE.md
+- PRODUCTS/WELLBINE/SCREEN_MAP.md
+- PRODUCTS/WELLBINE/FEATURE_FLAGS.md
