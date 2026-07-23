@@ -50,6 +50,11 @@ PRODUCTS/
         APP_RELEASE.md
         COMMERCE_BRIDGE.md
         SUPABASE_SCHEMA.md
+        QA_PLAN.md
+        PRIVACY_POLICY_DRAFT.md
+        TERMS_DRAFT.md
+        APP_RELEASE_CHECKLIST.md
+        
 ```
      
 ---
@@ -110,6 +115,8 @@ Wellbine is the first product built using AAI.
 
 Current documents:
 
+Current documents:
+
 - README.md
 - PRODUCT.md
 - BCAS.md
@@ -127,6 +134,10 @@ Current documents:
 - APP_RELEASE.md
 - COMMERCE_BRIDGE.md
 - SUPABASE_SCHEMA.md
+- QA_PLAN.md
+- PRIVACY_POLICY_DRAFT.md
+- TERMS_DRAFT.md
+- APP_RELEASE_CHECKLIST.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -200,6 +211,10 @@ Wellbine is being structured around:
 - App Release as the iOS and Android approval readiness layer
 - Commerce Bridge as the subscriber benefit and external commerce connection layer
 - Supabase Schema as the operational backend structure
+- QA Plan as the product validation and testing layer
+- Privacy Policy Draft as the privacy alignment layer
+- Terms Draft as the usage rules and product boundary layer
+- App Release Checklist as the practical launch verification layer
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
