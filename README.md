@@ -54,6 +54,10 @@ PRODUCTS/
         PRIVACY_POLICY_DRAFT.md
         TERMS_DRAFT.md
         APP_RELEASE_CHECKLIST.md
+        FLUTTERFLOW_BUILD_GUIDE.md
+        SUPABASE_IMPLEMENTATION.md
+        EDGE_FUNCTIONS.md
+        ADMIN_BUILD_GUIDE.md
         
 ```
      
@@ -115,8 +119,6 @@ Wellbine is the first product built using AAI.
 
 Current documents:
 
-Current documents:
-
 - README.md
 - PRODUCT.md
 - BCAS.md
@@ -138,6 +140,10 @@ Current documents:
 - PRIVACY_POLICY_DRAFT.md
 - TERMS_DRAFT.md
 - APP_RELEASE_CHECKLIST.md
+- FLUTTERFLOW_BUILD_GUIDE.md
+- SUPABASE_IMPLEMENTATION.md
+- EDGE_FUNCTIONS.md
+- ADMIN_BUILD_GUIDE.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -215,6 +221,10 @@ Wellbine is being structured around:
 - Privacy Policy Draft as the privacy alignment layer
 - Terms Draft as the usage rules and product boundary layer
 - App Release Checklist as the practical launch verification layer
+- FlutterFlow Build Guide as the mobile app implementation layer
+- Supabase Implementation as the backend execution layer
+- Edge Functions as the secure backend workflow layer
+- Admin Build Guide as the internal control implementation layer
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
