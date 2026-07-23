@@ -154,8 +154,12 @@ The current Wellbine documentation includes:
 - APP_RELEASE.md
 - COMMERCE_BRIDGE.md
 - SUPABASE_SCHEMA.md
-  
----
+- QA_PLAN.md
+- PRIVACY_POLICY_DRAFT.md
+- TERMS_DRAFT.md
+- APP_RELEASE_CHECKLIST.md
+
+  ---
 
 # Core Product Areas
 
@@ -429,6 +433,64 @@ Supabase is the source of truth. FlutterFlow is the interface layer.
 
 ---
 
+---
+
+## QA Plan
+
+Defined in:
+
+```text
+QA_PLAN.md
+```
+
+This document defines the structured testing and validation process for Wellbine.
+
+The QA Plan verifies that Wellbine works safely, reliably and coherently across product experience, backend logic, user data, admin configuration, app release and privacy-sensitive flows.
+
+---
+
+## Privacy Policy Draft
+
+Defined in:
+
+```text
+PRIVACY_POLICY_DRAFT.md
+```
+
+This document defines the first internal draft of the Wellbine Privacy Policy.
+
+The Privacy Policy Draft aligns product, data, app release, user trust and legal review before publication.
+
+It covers account data, profile data, wellness context, wearable data, uploads, AI-assisted guidance, Push interactions, Daily activity, Daily Stack data, Commerce Bridge activity and app usage information.
+
+---
+
+## Terms Draft
+
+Defined in:
+
+```text
+TERMS_DRAFT.md
+```
+
+This document defines the first internal draft of the Wellbine Terms of Use.
+
+The Terms Draft clarifies product boundaries, user responsibilities, wellness guidance limits, AI-assisted guidance, subscriptions, Daily Stack, Wearables, Uploads, Commerce Bridge and external services.
+
+---
+
+## App Release Checklist
+
+Defined in:
+
+```text
+APP_RELEASE_CHECKLIST.md
+```
+
+This document defines the practical verification checklist for publishing Wellbine on iOS and Android.
+
+The App Release Checklist translates the release strategy into concrete validation items for App Store review, Google Play review, internal testing, beta testing and controlled production launch.
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -598,3 +660,7 @@ Current focus:
 - PRODUCTS/WELLBINE/APP_RELEASE.md
 - PRODUCTS/WELLBINE/COMMERCE_BRIDGE.md
 - PRODUCTS/WELLBINE/SUPABASE_SCHEMA.md
+- PRODUCTS/WELLBINE/QA_PLAN.md
+- PRODUCTS/WELLBINE/PRIVACY_POLICY_DRAFT.md
+- PRODUCTS/WELLBINE/TERMS_DRAFT.md
+- PRODUCTS/WELLBINE/APP_RELEASE_CHECKLIST.md
