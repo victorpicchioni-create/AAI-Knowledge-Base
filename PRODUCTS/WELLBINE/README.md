@@ -153,6 +153,7 @@ The current Wellbine documentation includes:
 - WEARABLES.md
 - APP_RELEASE.md
 - COMMERCE_BRIDGE.md
+- SUPABASE_SCHEMA.md
   
 ---
 
@@ -410,6 +411,24 @@ Commerce Bridge supports monetization without turning Wellbine into an in-app st
 
 ---
 
+## Supabase Schema
+
+Defined in:
+
+```text
+SUPABASE_SCHEMA.md
+```
+
+This document defines the practical Supabase schema direction for Wellbine.
+
+The Supabase Schema translates the conceptual Data Model into an operational backend structure for Supabase, FlutterFlow, Admin and AAI services.
+
+It covers core tables, approximate fields, relationships, JSON configuration fields, Row Level Security direction, Storage buckets, Edge Functions, Admin publishing, event tracking and implementation phases.
+
+Supabase is the source of truth. FlutterFlow is the interface layer.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -578,3 +597,4 @@ Current focus:
 - PRODUCTS/WELLBINE/WEARABLES.md
 - PRODUCTS/WELLBINE/APP_RELEASE.md
 - PRODUCTS/WELLBINE/COMMERCE_BRIDGE.md
+- PRODUCTS/WELLBINE/SUPABASE_SCHEMA.md
