@@ -64,6 +64,7 @@ PRODUCTS/
         SUPABASE_SQL_MVP.md
         FLUTTERFLOW_ACTIONS.md
         EDGE_FUNCTION_PAYLOADS.md
+        MVP_TASK_BOARD.md
               
 ```
      
@@ -125,8 +126,6 @@ Wellbine is the first product built using AAI.
 
 Current documents:
 
-Current documents:
-
 - README.md
 - PRODUCT.md
 - BCAS.md
@@ -158,6 +157,7 @@ Current documents:
 - SUPABASE_SQL_MVP.md
 - FLUTTERFLOW_ACTIONS.md
 - EDGE_FUNCTION_PAYLOADS.md
+- MVP_TASK_BOARD.md
   
 Each product contains its own independent documentation, including product-specific methodologies, screens, flows, pillars, plan templates and implementation rules.
 
@@ -245,6 +245,7 @@ Wellbine is being structured around:
 - Supabase SQL MVP as the practical database starting point
 - FlutterFlow Actions as the frontend interaction logic layer
 - Edge Function Payloads as the backend contract layer
+- MVP Task Board as the practical execution checklist for building the MVP
 - BCAS as the biological context alignment methodology
 - AAI as the intelligence architecture
   
