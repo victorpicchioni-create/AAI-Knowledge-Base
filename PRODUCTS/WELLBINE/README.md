@@ -168,6 +168,7 @@ The current Wellbine documentation includes:
 - SUPABASE_SQL_MVP.md
 - FLUTTERFLOW_ACTIONS.md
 - EDGE_FUNCTION_PAYLOADS.md
+- MVP_TASK_BOARD.md
   
   ---
 
@@ -655,6 +656,22 @@ The core payload rule is: every Edge Function should receive clear intent and re
 
 ---
 
+## MVP Task Board
+
+Defined in:
+
+```text
+MVP_TASK_BOARD.md
+```
+
+This document defines the practical execution checklist for building the first usable version of Wellbine.
+
+The MVP Task Board transforms the Wellbine documentation into executable tasks across GitHub, Supabase, FlutterFlow, Edge Functions, Admin, Feature Flags, QA, Privacy, Terms and App Release.
+
+The core MVP task rule is: build the operating loop first.
+
+---
+
 # Push-First Principle
 
 Wellbine should generate value even when the app is not opened.
@@ -838,3 +855,4 @@ Current focus:
 - PRODUCTS/WELLBINE/SUPABASE_SQL_MVP.md
 - PRODUCTS/WELLBINE/FLUTTERFLOW_ACTIONS.md
 - PRODUCTS/WELLBINE/EDGE_FUNCTION_PAYLOADS.md
+- PRODUCTS/WELLBINE/MVP_TASK_BOARD.md
