@@ -658,13 +658,12 @@ Possible statuses:
 
 ```text
 upcoming
-available
-done
+active
+completed
 adjusted
 delayed
 skipped
 expired
-recovered
 ```
 
 Possible action types:
