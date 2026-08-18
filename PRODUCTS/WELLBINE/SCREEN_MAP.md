@@ -488,11 +488,12 @@ Let user adjust priorities before activation.
 May include:
 
 ```text
-Sleep priority
-Movement preference
-Nutrition preference
-Hydration preference
 Mind preference
+Sun preference
+Hydration preference
+Sleep priority
+Nutrition preference
+Movement preference
 Daily Stack preference
 ```
 
