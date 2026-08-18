@@ -331,7 +331,9 @@ create table if not exists public.user_settings (
   preferred_units text default 'metric',
   preferred_language text default 'en',
   preferred_timezone text,
-
+  wake_time_preference time,
+  sleep_time_preference time,
+  rhythm_anchor_source text default 'assumed',
   notification_preferences_json jsonb not null default '{}'::jsonb,
   privacy_preferences_json jsonb not null default '{}'::jsonb,
   accessibility_preferences_json jsonb not null default '{}'::jsonb,
