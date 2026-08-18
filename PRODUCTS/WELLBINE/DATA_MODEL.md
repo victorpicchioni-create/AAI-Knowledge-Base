@@ -97,7 +97,7 @@ plan_templates
 user_active_plans
 daily_actions
 push_events
-pillar_states
+user_pillar_states
 ```
 
 Document filenames remain uppercase.
