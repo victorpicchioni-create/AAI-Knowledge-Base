@@ -1244,3 +1244,235 @@ Future versions of the pillar system may include:
 - PRODUCTS/WELLBINE/DAILY.md
 - PRODUCTS/WELLBINE/PUSH.md
 - PRODUCTS/WELLBINE/STACK.md
+
+---
+
+# Execution And Sync
+
+**Version:** 1.0.0
+
+**Status:** Canonical
+
+**Last Updated:** August 2026
+
+---
+
+## Purpose
+
+This section is the rule. From here on the scoring model is documented, not
+invented.
+
+**If the code and this section disagree, this section wins.**
+
+It supersedes every earlier scoring text, including the Pass 20C section
+mirrored in `docs/PILLARS_SYNC_CANONICAL.md`. The superseded statements are
+listed at the end rather than deleted, so a reader who finds the old text
+elsewhere knows it is old.
+
+---
+
+## The Two Layers
+
+Wellbine answers two different questions and must never answer them with one
+number.
+
+```text
+ON HOME — how much of today have I executed?
+
+Execution only.
+No timing, no quality, no judgement.
+A meal eaten at the wrong hour, badly, still counts its full weight.
+```
+
+```text
+IN THE ENGINE — how well is this person aligned?
+
+Timing, execution quality, context windows, sleep opportunity,
+recovery, effort.
+It surfaces in the Adaptive Summary. Never on Home.
+```
+
+The engine is not weakened by this split. It is moved off the front page.
+
+A percentage on Home is a progress reading, not a verdict. A progress reading of
+30% at eight in the morning is correct; a *score* of 30% at eight in the morning
+was a judgement the user had no way to escape.
+
+---
+
+## The Execution Meter
+
+```text
+execution % = 100 × Σ (weight × executed) / Σ (weight of counted rows)
+```
+
+The denominator is the **whole day**, not the windows that have opened.
+
+`executed` is a fraction from 0 to 1:
+
+```text
+a row with progress      current / target, clamped to 0..1
+a row without progress   1 if completed, otherwise 0
+```
+
+Partial execution is natural and is counted as such. Three of eight hydration
+servings is three eighths of hydration's weight.
+
+**There is no quality factor, no timing factor and no band in this layer.**
+
+---
+
+## What A Row Is
+
+A day is a set of `daily_actions` rows. There is exactly one generator for them.
+Nothing else is a store of record: per-pillar counters and timeline moments are
+projections of these rows, never sources.
+
+A row carries what the documented table carries — `pillar_id`, `action_type`,
+`status`, `scheduled_window_start` / `_end`, `completed_at`, `metadata_json`.
+
+`action_type` must be one of the documented values. No new value may be invented
+to carry a rule; a rule that needs a new type needs a new column or a decision.
+
+```text
+hydration · movement · meal · sleep · mind · sun · stack · check_in · recovery
+```
+
+**A rule may never be expressed as a string comparison on `action_type`.** A
+filter written that way excludes the correct documented value the moment someone
+uses it, silently, with no error and no failing test. If a thing must be
+excluded from the meter, it must not be a row.
+
+---
+
+## Sleep
+
+Sleep opportunity is **not a row**. Nobody executes sleep; it happens to a
+person. It is a derived reading computed from the user's own anchors and it
+lives on the Sleep screen.
+
+Sleep **actions** are rows like any other:
+
+```text
+the bedtime ritual   night_reset window
+the wake ritual      wake window
+```
+
+A person who performs their morning ritual sees the day's percentage move. A
+person who slept well and did nothing else does not — the meter measures what
+was done, and the sleep reading says the rest.
+
+Recovery zones are unchanged and are documented above: green 7h or more, yellow
+6h to 7h, orange under 6h, credited at the top of the band.
+
+---
+
+## Enabled, Disabled And Empty Pillars
+
+Weight and visibility are two decisions, not one.
+
+| pillar state | in the denominator | renders an orb |
+|---|---|---|
+| enabled, has rows today | yes | yes, with its percentage |
+| enabled, no rows today | **no** | **yes**, identity only, no percentage |
+| disabled by the user | no | no |
+
+A pillar the user switched off must leave the denominator. If its weight stays,
+that weight can never be earned and the user's ceiling drops below 100%
+permanently, from a configuration choice, on the first day, silently. That is
+punishment arriving through configuration.
+
+A pillar that is enabled and merely empty is a pillar **awaiting setup**, and it
+must keep its orb — the orb is how the user reaches the pillar. Removing it
+removes the affordance that would end the emptiness.
+
+An empty orb shows neither `0%` nor a dash. It shows its identity and nothing
+else.
+
+---
+
+## Reachability
+
+**100% must be reachable by an ordinary good day.**
+
+`PILLARS.md` above states that Sync represents overall alignment, not
+perfection, that a user can recover a day after missing or delaying actions, and
+that harsh penalties are to be avoided. Those three sentences have one testable
+consequence: a user who performs every enabled row, at standard execution,
+reads exactly 100%. Nothing above "enough" is left to chase.
+
+This must be asserted through the real path — activation, preference write, row
+generation, meter read, and the rendered screen — not by constructing the
+meter's inputs by hand. A count proves a write happened; it does not prove
+anything can read it.
+
+---
+
+## The Home Readout
+
+Home shows, in this order:
+
+```text
+the count        N of M done
+the figure       the execution percentage
+the day          one mark per counted row
+the cycle        the current Biological Context cycle
+```
+
+The day is discrete, not continuous: it is a set of actions, and one mark per
+action is the honest figure. The reader can count them, which makes the
+percentage verifiable.
+
+A mark has three states — pending, partial, done — because rows can be
+partially executed and a two-state mark would make the count and the percentage
+contradict each other on the same screen.
+
+**No band word appears on Home.** Bands belong to Sync, in the Adaptive Summary.
+An execution percentage is self-describing.
+
+**Colour never carries a verdict here.** One family, rising in light with the
+value. High execution is good; there is nothing to warn about, and the warm end
+of the palette means alert everywhere else in the product.
+
+`0%` renders. A day that has not started is not a deficit.
+
+---
+
+## What Is Never On Home
+
+Recorded because each of these has arrived once already, each through a
+different door:
+
+- punitive vocabulary — "missed", "penalty", "lost", "behind"
+- a colour that reads as a warning at a low value
+- an arithmetic cliff that scores a late action the same as an omitted one
+- a rule that keys on item identity, so a substitution scores zero
+- a configuration choice that silently lowers the ceiling
+- a pillar label whose measurement is one ritual inside that pillar
+
+The pattern is the point: it returns through a new channel each time, past the
+guard built for the last one. A new guard must assert the RULE, and must assert
+that it matched something — a check that can pass by finding nothing is not a
+check.
+
+---
+
+## Superseded
+
+Kept for traceability, not deleted. Anyone finding these elsewhere should read
+them as history.
+
+- **The opened-window denominator.** A task entering both sides of the fraction
+  only once its window opened. Deleted — the meter counts the whole day.
+- **The four timing bands** (on time ×1.0, late ×0.7, recovered ×0.4, omitted
+  ×0) applied to the Home figure, and the completion-cycle ledger that stamped
+  them. The engine keeps timing; the Home figure has none.
+- **The `recovered` status.** It appears once in `DATA_MODEL.md`, undefined, in
+  the weaker of two conflicting status lists, and contradicts the only
+  documented payload value. The canonical set is:
+  `upcoming · active · completed · adjusted · delayed · skipped · expired`.
+- **Sleep zone linear interpolation** inside each band. Superseded by
+  top-of-band credit.
+- **A hard-coded hydration log target.** The daily goal is plan configuration.
+- **The claim that the Pass 20C section is mirrored verbatim in this file.** It
+  was not. This section is the mirror, and it is the original.
