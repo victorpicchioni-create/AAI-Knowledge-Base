@@ -163,5 +163,5 @@ If a concept is not documented in this repository, it is not considered official
 
 - FOUNDATION/AAI_CONSTITUTION.md
 - FOUNDATION/AAI_PRINCIPLES.md
-- FRAMEWORKS/BCAS.md
+- PRODUCTS/WELLBINE/BCAS.md
 - FRAMEWORKS/POPAE.md
